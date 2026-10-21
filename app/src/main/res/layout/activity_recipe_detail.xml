@@ -1,0 +1,8 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F7F1">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+        <TextView android:id="@+id/recipeTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="27sp" android:textStyle="bold" android:textColor="#173D2D" android:paddingBottom="18dp"/>
+        <TextView android:id="@+id/recipeIngredients" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="17sp" android:textColor="#26352B" android:lineSpacingExtra="5dp" android:paddingBottom="20dp"/>
+        <TextView android:id="@+id/recipeSteps" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="17sp" android:textColor="#26352B" android:lineSpacingExtra="5dp"/>
+        <Button android:id="@+id/backFromRecipe" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back"/>
+    </LinearLayout>
+</ScrollView>

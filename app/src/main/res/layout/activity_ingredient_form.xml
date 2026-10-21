@@ -1,0 +1,11 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F7F1">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add or edit ingredient" android:textSize="24sp" android:textStyle="bold" android:textColor="#173D2D" android:paddingBottom="18dp"/>
+        <EditText android:id="@+id/nameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ingredient name (e.g. tomato)" android:inputType="textCapSentences"/>
+        <EditText android:id="@+id/quantityInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Quantity (e.g. 2)" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/unitInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Unit (e.g. pieces, cups, g)" android:inputType="text"/>
+        <EditText android:id="@+id/expiryInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Expiry date (optional: YYYY-MM-DD)" android:inputType="text"/>
+        <Button android:id="@+id/saveIngredient" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save ingredient"/>
+        <Button android:id="@+id/cancelIngredient" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cancel"/>
+    </LinearLayout>
+</ScrollView>

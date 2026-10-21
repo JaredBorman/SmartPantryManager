@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="22dp" android:background="#F4F7F1">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Settings" android:textSize="27sp" android:textStyle="bold" android:textColor="#173D2D" android:paddingBottom="16dp"/>
+    <Switch android:id="@+id/expiryAlertsSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Expiry-soon alert preference"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This saves your preference locally. The current version stores the setting but does not send notifications." android:textColor="#53665A" android:paddingTop="8dp" android:paddingBottom="18dp"/>
+    <Button android:id="@+id/backFromSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back"/>
+</LinearLayout>

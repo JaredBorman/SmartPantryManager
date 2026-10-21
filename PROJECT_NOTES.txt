@@ -1,0 +1,5 @@
+Starter project generated for guided learning. Open in Android Studio and test before submission.
+The code is a foundation, not proof of a tested build. You must run it, fix any SDK/Gradle issues,
+take real screenshots, make genuine incremental Git commits, and write your report/video based on
+what you actually did. Strict matching currently models each recipe ingredient as requiring at least
+1 stored unit and does not convert measurement units.

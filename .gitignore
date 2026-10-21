@@ -1,0 +1,15 @@
+
+# Android build output
+.gradle/
+**/build/
+
+# Local Android SDK path
+local.properties
+
+# Android Studio local settings
+.idea/
+*.iml
+
+# OS-generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F4F7F1" android:padding="18dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Suggested recipes" android:textSize="25sp" android:textStyle="bold" android:textColor="#173D2D"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Every required ingredient must be in your pantry." android:textColor="#53665A" android:paddingBottom="10dp"/>
+    <TextView android:id="@+id/noSuggestions" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#53665A"/>
+    <ListView android:id="@+id/suggestedList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:dividerHeight="1dp"/>
+    <Button android:id="@+id/backToPantry" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to pantry"/>
+</LinearLayout>
