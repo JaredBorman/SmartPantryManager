@@ -29,8 +29,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.insert("preferences", null, pref);
     }
 
-    @Override public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Keep this migration method for future schema changes.
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // Database version 1 has no upgrade migrations yet.
+        // When the schema changes, add migration logic here
+        // to preserve existing user data.
     }
 
     private void seedRecipes(SQLiteDatabase db) {
