@@ -44,23 +44,24 @@ Pantry ingredients are stored in the local SQLite database so that saved informa
 ## Important limitation
 The starter matching logic checks ingredient presence and requires at least 1 stored unit for each ingredient. It does not yet convert between measurement units or model recipe-specific quantities.
 
+## Testing and Verification
 
-## Testing
+The application was manually tested to verify its main features.
 
-The application was tested in the Android emulator.
+| Test | Expected Result | Status |
+|---|---|---|
+| Add ingredient | Ingredient is saved and displayed | Passed |
+| Edit ingredient | Updated details are displayed | Passed |
+| Delete ingredient | Ingredient is removed from the pantry | Passed |
+| Data persistence | Ingredients remain after restarting the app | Passed |
+| Input validation | Empty names and zero quantities are rejected | Passed |
+| Recipe matching | Only recipes with all required ingredients are suggested | Passed |
+| Recipe details | Recipe name, ingredients, and steps are displayed | Passed |
+| Empty pantry | A clear message appears when no recipes match | Passed |
+| Settings | The saved expiry-alert preference is retained | Passed |
+| Expiry date | The saved ingredient expiry date is displayed | Passed |
 
-The following tests passed:
-
-- Added pantry ingredients and verified that they appeared in the list.
-- Edited an ingredient and confirmed that its updated quantity was displayed.
-- Deleted an ingredient and verified that it remained deleted after restarting the app.
-- Restarted the app and confirmed that pantry data persisted.
-- Verified that recipe suggestions only appeared when all required ingredients were available in sufficient quantities.
-- Confirmed that the app displayed a helpful message when no recipes matched the pantry.
-- Verified that recipe details displayed the recipe name, ingredients, and cooking steps.
-- Confirmed that the app rejected an empty ingredient name and a quantity of zero.
-- Verified that the expiry-alert preference persisted after navigating away from Settings and returning.
-- Added an ingredient with an expiry date and confirmed that the date was saved and displayed.
+Testing was performed manually using the running Android application. The results confirmed that the tested features behaved as expected.
 
 ## How to Run the Application
 
