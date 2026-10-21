@@ -61,3 +61,33 @@ The following tests passed:
 - Confirmed that the app rejected an empty ingredient name and a quantity of zero.
 - Verified that the expiry-alert preference persisted after navigating away from Settings and returning.
 - Added an ingredient with an expiry date and confirmed that the date was saved and displayed.
+
+## How to Run the Application
+
+1. Install Android Studio on your computer.
+2. Clone or download the Smart Pantry Manager repository from GitHub.
+3. Open Android Studio and select **Open**.
+4. Select the `SmartPantryManager` project folder.
+5. Allow Gradle to sync and download the required dependencies.
+6. Start an Android emulator or connect an Android device with USB debugging enabled.
+7. Click **Run** in Android Studio to build and launch the application.
+
+## Technologies Used
+
+- **Programming language:** Java
+- **Development environment:** Android Studio
+- **Database:** SQLite
+- **User interface:** Android XML layouts
+- **Navigation:** Android Activities and Intents
+- **Version control:** Git and GitHub
+
+## Project Structure
+
+- `MainActivity.java` manages the main pantry screen.
+- `IngredientFormActivity.java` handles adding and editing ingredients.
+- `SuggestedRecipesActivity.java` displays recipes that match available ingredients.
+- `RecipeDetailActivity.java` displays recipe ingredients and preparation steps.
+- `SettingsActivity.java` manages application preferences.
+- `DatabaseHelper.java` manages SQLite database operations.
+- `IngredientAdapter.java` displays pantry ingredients.
+- `RecipeAdapter.java` displays suggested recipes.
