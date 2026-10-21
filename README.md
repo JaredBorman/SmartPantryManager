@@ -28,4 +28,22 @@ A Java Android application for tracking pantry ingredients and suggesting recipe
 SQLite was selected because the app is designed for offline, on-device pantry tracking. It avoids a separate server and keeps the implementation easy to demonstrate.
 
 ## Important limitation
-The starter matching logic checks ingredient presence and requires at least 1 stored unit for each ingredient. It does not yet convert between measurement units or model recipe-specific quantities. Improve and test this if your lecturer expects quantity-aware matching beyond ingredient presence.
+The starter matching logic checks ingredient presence and requires at least 1 stored unit for each ingredient. It does not yet convert between measurement units or model recipe-specific quantities.
+
+
+## Testing
+
+The application was tested in the Android emulator.
+
+The following tests passed:
+
+- Added pantry ingredients and verified that they appeared in the list.
+- Edited an ingredient and confirmed that its updated quantity was displayed.
+- Deleted an ingredient and verified that it remained deleted after restarting the app.
+- Restarted the app and confirmed that pantry data persisted.
+- Verified that recipe suggestions only appeared when all required ingredients were available in sufficient quantities.
+- Confirmed that the app displayed a helpful message when no recipes matched the pantry.
+- Verified that recipe details displayed the recipe name, ingredients, and cooking steps.
+- Confirmed that the app rejected an empty ingredient name and a quantity of zero.
+- Verified that the expiry-alert preference persisted after navigating away from Settings and returning.
+- Added an ingredient with an expiry date and confirmed that the date was saved and displayed.
