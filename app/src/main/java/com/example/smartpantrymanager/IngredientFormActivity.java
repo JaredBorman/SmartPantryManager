@@ -39,7 +39,14 @@ public class IngredientFormActivity extends Activity {
         double amount;
         try { amount = Double.parseDouble(q); }
         catch (NumberFormatException ex) { Toast.makeText(this, "Enter a valid quantity.", Toast.LENGTH_LONG).show(); return; }
-        if (amount <= 0) { Toast.makeText(this, "Quantity must be greater than zero.", Toast.LENGTH_LONG).show(); return; }
+        if (Double.isNaN(amount) || Double.isInfinite(amount) || amount <= 0) {
+            Toast.makeText(
+                    this,
+                    "Quantity must be a finite number greater than zero.",
+                    Toast.LENGTH_LONG
+            ).show();
+            return;
+        }
         if (ingredientId == -1) {
             long result = db.addIngredient(n, amount, u, e);
 
